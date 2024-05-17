@@ -1,5 +1,5 @@
 .card {
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 20px;
     background-color: #fff;
     border: none;
@@ -8,18 +8,46 @@
     font-size: 110px;
     font-weight: bold;
     color: #333;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   .card-text {
     font-size: 40px;
     color: #666;
     margin-bottom: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   .btn-outline-dark {
     display: block;
     width: 40%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   #top-page {
     margin-top: 45px;
     margin-bottom: 50px
   }
   
+  .notoserifJP{
+    color:black;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#business {
+  font-size:70px;
+  margin-top: 90px;
+}
+
+#bottom-page{
+  padding:20px;
+}
