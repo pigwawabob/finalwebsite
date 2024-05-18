@@ -25,7 +25,6 @@
   .btn-outline-dark {
     display: block;
     width: 40%;
-    font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -51,4 +50,6 @@
 #bottom-page{
   padding:20px;
 }
-
+.btn.btn-outline-dark {
+  font-family: "Noto Serif JP", serif;
+}
