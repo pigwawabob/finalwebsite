@@ -17,6 +17,8 @@
         <!--NEW:PREVENT OVERFLOW-->
         <style>
             body { overflow-x: hidden; /* Prevent horizontal scroll */ }
+            img { max-width: 100%; /* Ensure images are responsive */ height: auto; }
+            .navbar-nav .nav-link { white-space: nowrap; /* Prevent navbar links from breaking */ }
             .container-fluid > .row { margin-right: 0; margin-left: 0; } 
         </style>
       </head>
@@ -82,7 +84,7 @@
                             <div class="card-body"> 
                                 <div id="business" class="card-title mx-auto">Home, Business, Commercial.</div> <!--or margin top here-->
                                 <p class="card-text">We do it all!</p>
-                                <a href="info.html" class="btn btn-outline-dark rounded-0">QUOTES TEST</a>
+                                <a href="info.html" class="btn btn-outline-dark rounded-0">QUOTES</a>
                             </div>
                         </div>
                     </div>
