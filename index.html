@@ -14,6 +14,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <!--end-->
+        <!--NEW:PREVENT OVERFLOW-->
+        <style>
+            body { overflow-x: hidden; /* Prevent horizontal scroll */ }
+            img { max-width: 100%; /* Ensure images are responsive */ height: auto; }
+            .navbar-nav .nav-link { white-space: nowrap; /* Prevent navbar links from breaking */ }
+            .container-fluid > .row { margin-right: 0; margin-left: 0; } 
+        </style>
       </head>
   <body>
         <div class="container-fluid">
