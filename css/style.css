@@ -90,3 +90,25 @@
   font-family: "Noto Serif JP", serif;
   font-weight: 500;
 }
+
+/*PREVENT OVERFLOW*/
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+img {
+  max-width: 100%; /* Ensure images are responsive */ height: auto; 
+}
+
+.navbar-nav .nav-link {
+  /*white-space: nowrap; /* Prevent navbar links from breaking */
+  left:1px;
+}
+
+.container-fluid > .row {
+  margin-right: 0; margin-left: 0;
+} 
+
+.section-icons{
+  position
+}
