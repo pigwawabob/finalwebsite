@@ -122,8 +122,8 @@ img {
 }
 
 .sleek-line{
-    width: 5%;
-    height: 2px; /* adjust thickness of the line */
+    width: 25%;
+    height:4px; /* adjust thickness of the line */
     background-color: #000; /* default color */
     margin-bottom: 20px; /* adjust distance between line and heading */
 }
