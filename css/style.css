@@ -110,7 +110,7 @@ img {
 } 
 
 .section-icons{
-  position
+  position:fillinlater;
 }
  #review {
   font-size: 85px;
@@ -119,4 +119,11 @@ img {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.sleek-line{
+    width: 5%;
+    height: 2px; /* adjust thickness of the line */
+    background-color: #000; /* default color */
+    margin-bottom: 20px; /* adjust distance between line and heading */
 }
