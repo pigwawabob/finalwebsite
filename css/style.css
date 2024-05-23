@@ -127,3 +127,8 @@ img {
     background-color: #000; /* default color */
     margin-bottom: 20px; /* adjust distance between line and heading */
 }
+#contact{
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Noto Serif JP", serif;
+}
