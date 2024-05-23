@@ -127,8 +127,26 @@ img {
     background-color: #000; /* default color */
     margin-bottom: 20px; /* adjust distance between line and heading */
 }
+
+.review-line{
+  width: 17%;
+  height:4px; /* adjust thickness of the line */
+  background-color: #000; /* default color */
+  margin-bottom: 20px; /* adjust distance between line and heading */
+}
+
 #contact{
   font-size: 100px;
   font-weight: bold;
   font-family: "Noto Serif JP", serif;
+}
+
+.contactInfo{
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
