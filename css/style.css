@@ -138,8 +138,6 @@ img {
 
 #contact{
   font-size: 100px;
-  font-weight: bold;
-  font-family: "Noto Serif JP", serif;
 }
 
 .contactInfo{
@@ -165,7 +163,7 @@ img {
 }
 
 .slantUS{
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .bdrds{
