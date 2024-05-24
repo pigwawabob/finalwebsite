@@ -132,7 +132,8 @@ img {
   width: 17%;
   height:4px; /* adjust thickness of the line */
   background-color: #000; /* default color */
-  margin-bottom: 20px; /* adjust distance between line and heading */
+  margin-bottom: 10px; /* adjust distance between line and heading */
+  margin-top:10px;
 }
 
 #contact{
@@ -149,4 +150,24 @@ img {
   font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
+}
+
+.contanctTitle{
+  font-size: 100px;
+  padding: 100px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.slantUS{
+  font-weight: 300;
+}
+
+.bdrds{
+  border-radius: 5%;
 }
