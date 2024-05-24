@@ -138,6 +138,14 @@ img {
 
 #contact{
   font-size: 100px;
+  padding: 100px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
 
 .contactInfo{
@@ -167,5 +175,34 @@ img {
 }
 
 .bdrds{
-  border-radius: 5%;
+  border-radius: 20%;
+}
+
+.service-title {
+                
+  font-size: 110px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+}
+.service-text {
+  font-size: 25px;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.the{
+  padding-bottom:2px;
+}
+
+.services{
+  padding-top:2px;
 }

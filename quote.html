@@ -13,7 +13,36 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <!--end-->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <!--end-->
+        <style>
+            .service-title {
+                
+                font-size: 110px;
+                font-family: "Nunito Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 200;
+                font-style: normal;
+                font-variation-settings:
+                    "wdth" 100,
+                    "YTLC" 500;
+            }
+            .service-text {
+                font-size: 25px;
+                color: #666;
+                margin-bottom: 20px;
+                font-family: "Noto Serif JP", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .the{
+                padding-bottom:2p;
+            }
+        </style>      
       </head>
   <body>
         <div class="container-fluid">
@@ -45,18 +74,52 @@
         <div class = "container-fluid">
             <info>
                 <div class = "row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 p-3">
                         <img class="img-fluid p-3" src="img/organize.jpg" alt="Organization Image">
                     </div>
                     <div class="col-lg-5">
-                        <div class="text-start p-3">
+                        <div class="text-start p-3 service-title">
                             <div class="sleek-line"></div>
-                            The services
+                            <p class="the">THE</p> <p class="services"><i><b>SERVICES</b></i></p>
                         </div>
-                        <div class="text-start p-3">
+                        <div class="text-start p-3 service-text">
                             Unlock the potential of your space with form, function, fun, and our help! Our professional in-home organizing services are now available in 7 cities nationwide, with virtual and travel services upon request.
                         </div>
-                        <a href="info.html" class="btn btn-outline-dark rounded-0">Book Now</a>
+                        <a href="info.html" class="btn btn-outline-dark rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Book Now</a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Services:</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">First Name:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Last Name:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@gmail.com">
+                                        </div>
+                                        <div>
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-outline-dark rounded-0">Send message</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12">
@@ -70,7 +133,7 @@
                     <div class="col-lg-5">
                         <div class="text-end">
                             <div class="sleek-line"></div>
-                            <h5 class="cart-title">The In-Home Service</h5>
+                            <h5 class="card-title">The In-Home Service</h5>
                         </div>
                         <div class="text-end p-3">
                             <p class="card-text">Whether you're looking for a full transformation or just a finishing touch, we specialize in providing systems and solutions that fit your lifestyle.</p>
@@ -78,7 +141,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <img class="img-fluid p-3" src="img/organize.jpg" alt="Organization Image">
+                        <img class="img-fluid p-3" src="img/organize.jpg" alt="Organization Image" height="700px">
                     </div>
                 </div>
                 <div class="col-12">
@@ -93,7 +156,7 @@
                         <div class="card border-0 mt-1" style="width: 100%;">
                             <img class="card-img-top bdrds" src="img/clean.webp" alt="Card image cap">
                             <div class="card-body">
-                              <h5 class="card-title">Business</h5>
+                              <h5 class="card-title text-center">Business</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.   <a href="info.html" class="btn btn-outline-dark rounded-0">BOOK NOW</a></p>
                             </div>
                           </div>
@@ -102,7 +165,7 @@
                         <div class="card border-0 mt-1" style="width: 100%;">
                             <img class="card-img-top bdrds" src="img/clean.webp" alt="Card image cap">
                             <div class="card-body">
-                              <h5 class="card-title" style="font-size:102px;">Commercial</h5>
+                              <h5 class="card-title text-center" style="font-size:102px;">Commercial</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.   <a href="info.html" class="btn btn-outline-dark rounded-0">BOOK NOW</a></p>
                             </div>
                           </div>
