@@ -159,6 +159,7 @@ img {
 }
 
 .contanctTitle{
+  line-spacing:;
   font-size: 100px;
   padding: 100px;
   font-family: "Nunito Sans", sans-serif;
@@ -175,7 +176,7 @@ img {
 }
 
 .bdrds{
-  border-radius: 20%;
+  border-radius: 5%;
 }
 
 .service-title {
@@ -200,9 +201,10 @@ img {
 }
 
 .the{
-  padding-bottom:2px;
+  margin-bottom: 2px;
 }
 
 .services{
-  padding-top:2px;
+  margin-top: 2px;
+  font-weight: bold;
 }
