@@ -133,7 +133,7 @@ img {
   background-color: #000; /* default color */
   margin-bottom: 20px; /* adjust distance between line and heading */
   margin-top: 30px;
-  margin-right: 100px; /* adjust distance from the right */
+  margin-right: 120px; /* adjust distance from the right */
 }
 
 .review-line{
@@ -223,4 +223,17 @@ img {
 }
 #style1 {
   font-weight: bold;
+}
+#booknow-services{
+   margin-top: -10px;
+}
+#services-text {
+  margin-top: -20px;
+}
+.sleek-line2{
+  width: 50%;
+  height:4px; /* adjust thickness of the line */
+  background-color: #000; /* default color */
+  margin-bottom: 20px; /* adjust distance between line and heading */
+  margin: auto;
 }

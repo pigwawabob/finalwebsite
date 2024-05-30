@@ -54,13 +54,137 @@
                     <div class="col-lg-5">
                         <div class="text-start p-3 service-title">
                             <div class="sleek-line" style="margin-top: 15px;"></div>
-                            <p>Services</p>
+                            <p> The Services.</p>
                         </div>
-                        <div class="text-start p-3 service-text">
-                            Unlock the potential of your space with form, function, fun, and our help! 
+                        <div id="services-text" class="text-start p-3 service-text">
+                            Unlock the potential of your space with form, function, fun, and our help!
                         </div>
-                        <div class="padding">
-                            <a href="info.html" class="btn btn-outline-dark rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BOOK NOW</a>
+                        <div class="padding" id="booknow-services">
+                            <a href="info.html" class="btn btn-outline-dark rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@mdo">ESTIMATES</a>
+                        </div>
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel1">Estimates:</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body rounded-2">
+                                    <form method="post" id="estimate-form">
+                                        <div class="row">
+                                            <div class="col-md-4 border border-dark rounded-0">
+                                                <div class="text-center">
+                                                    Service Type:
+                                                </div>
+                                                <br>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="serviceType" id="serviceType1" value="home" checked>
+                                                    <label class="form-check-label" for="serviceType1">
+                                                        In-home
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="serviceType" id="serviceType2" value="business">
+                                                    <label class="form-check-label" for="serviceType2">
+                                                        Business
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="serviceType" id="serviceType3" value="commercial">
+                                                    <label class="form-check-label" for="serviceType3">
+                                                        Commercial
+                                                    </label>
+                                                </div>
+                                                <br>
+                                            </div>
+                                            <div class="col-md-4 border border-dark rounded-0">
+                                                <div class="text-center">
+                                                    Ft²
+                                                </div>
+                                                <br>
+                                                <div class="col-md-4 w-100 rounded-0">
+                                                    <div class="justify-content-center">
+                                                        <div class = "w-100">
+                                                            <input type="range" class="form-range" min="50" max="1000" step="1" value="0" onchange="updateOutput(this.value)" oninput="updateOutput(this.value)" name="area">
+                                                        </div>
+                                                        <output for="customRange1" class="ms-2" id="output"></output>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    function updateOutput(value) {
+                                                        document.getElementById("output").value = value;
+                                                    }
+                                                </script>
+                                            </div>
+                                            <div class="col-md-4 border border-dark rounded-0">
+                                                <div class="text-center">
+                                                    Completion Date:
+                                                </div>
+                                                <br>
+                                                <input type="date" class="form-control border-dark rounded-0" id="date" name="date">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-1"></div>
+                                            <div class="col-md-10">
+                                                <div class="">
+                                                    <button type="button" class="btn btn-outline-dark rounded-0 w-100 mb-3 me-3" id="estimate-button">ESTIMATE</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-1"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                                <div class="row" style="display: none;" id="result-row">
+                                    <div class="col-12">
+                                        <div id="estimate-result" class="text-center mb-2">Placeholder Text</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="estimate-date" class="text-center mb-3">Placeholder Text</div>
+                                    </div>
+                                </div>
+                                <script>
+                                    document.getElementById("estimate-button").addEventListener("click", function() {
+                                        var submittedForm = document.getElementById("estimate-form");
+                                        var form = new FormData(submittedForm);
+                                        var serviceType = form.get("serviceType");
+                                        var sqft = parseInt(form.get("area"));
+                                        var date = form.get("date");
+                                        var resultRow = document.getElementById("result-row");
+                                        var setResult = document.getElementById("estimate-result");
+                                        var setDate = document.getElementById("estimate-date");
+                                        resultRow.style.display = "block";
+                                        if(serviceType == "home"){
+                                            if(sqft >= 50 && sqft <= 500){
+                                                setResult.innerHTML = "Total Price for the Job Would be: $" + (sqft*5) 
+                                            }
+                                            else if(sqft > 500 && sqft <=1000){
+                                                setResult.innerHTML = "Total Price for the Job Would be: $" + (sqft*6.5) 
+                                            }
+                                        }
+                                        else if(serviceType == "business"){
+                                            if(sqft >= 50 && sqft <= 500){
+                                                setResult.innerHTML = "Total Price for the Job Would be: $" + (sqft*7) 
+                                            }
+                                            else if(sqft > 500 && sqft <=1000){
+                                                setResult.innerHTML = "Total Price for the Job Would be: $" + (sqft*7.5) 
+                                            }
+                                        }
+                                        else if(serviceType == "commercial"){
+                                            if(sqft >= 50 && sqft <= 500){
+                                                setResult.innerHTML = "Total Price for the Job Would be: $" + (sqft*8) 
+                                            }
+                                            else if(sqft > 500 && sqft <=1000){
+                                                setResult.innerHTML = "Total Price for the Job Would be: $" + (sqft*8.5) 
+                                            }
+                                        }
+                                        setDate.innerHTML = "Estimated completion by: " + date;
+                                    });
+                                </script>
+                              </div>
+                            </div>
                         </div>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -69,6 +193,7 @@
                                   <h5 class="modal-title" id="exampleModalLabel">BOOK NOW:</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+
                                 <div class="modal-body rounded-2">
                                     <form>
                                         <div class="mb-3">
@@ -98,6 +223,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="col-12">
                     <div class="section-icons" style="--section-icon-position: 0%; --section-icon-space: 52px">
                         <div class="page-width page-width--narrow border-bottom border-1 border-black text-center">
@@ -105,6 +231,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="text-end">
@@ -120,6 +247,7 @@
                         <img class="img-fluid p-3" src="img/organize.jpg" alt="Organization Image" style="height: 600px;">
                     </div>
                 </div>
+                <br>
                 <div class="col-12">
                     <div class="section-icons" style="--section-icon-position: 0%; --section-icon-space: 52px">
                         <div class="page-width page-width--narrow border-bottom border-1 border-black text-center">
@@ -153,12 +281,14 @@
                           </div>
                     </div>
                 </div>
+                <br>
                 <div class="col-12">
                     <div class="section-icons" style="--section-icon-position: 0%; --section-icon-space: 52px">
-                        <div class="page-width page-width--narrow border-bottom border-1 border-black text-center">
-                          <img sizes="100vw" src="//thehomeedit.com/cdn/shop/files/section-shop-icon.png?v=1649196018" loading="lazy" alt="" width="345" height="60">
+                        <div class="page-width page-width--narrow border-bottom border-1 border-black text-start">
+                            <img sizes="100vw" src="//thehomeedit.com/cdn/shop/files/section-inhouse-icon.png?v=1651890833" loading="lazy" alt="pic" width="360" height="90">
                         </div>
                     </div>
+                    
                 </div>
             </info>
         </div>
