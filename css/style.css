@@ -129,6 +129,8 @@ img {
 }
 
 .inhome-line {
+  position: relative;
+  left: 400px;
   width: 25%;
   height: 4px; /* adjust thickness of the line */
   background-color: #000; /* default color */
@@ -190,9 +192,8 @@ img {
 }
 
 .service-title {
-                
-  font-size: 110px;
-    font-weight: bold;
+    margin-top: 5px;          
+    font-size: 110px;
     color: #333;
     font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
@@ -209,14 +210,6 @@ img {
   font-style: normal;
 }
 
-.services{
-  margin-top: 2px;
-  font-weight: bold;
-}
-.the{
-  margin-bottom: 2px;
-  font-weight: bold;
-}
 .padding {
   padding-left: 19px;
 }
