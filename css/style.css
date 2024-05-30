@@ -128,12 +128,13 @@ img {
     margin-bottom: 20px; /* adjust distance between line and heading */
 }
 
-.inhome-line{
-  padding-top: 10px;
+.inhome-line {
   width: 25%;
-  height:4px; /* adjust thickness of the line */
+  height: 4px; /* adjust thickness of the line */
   background-color: #000; /* default color */
   margin-bottom: 20px; /* adjust distance between line and heading */
+  margin-top: 30px;
+  margin-right: 100px; /* adjust distance from the right */
 }
 
 .review-line{
@@ -214,5 +215,22 @@ img {
 }
 .the{
   margin-bottom: 2px;
+  font-weight: bold;
+}
+.padding {
+  padding-left: 19px;
+}
+.inhome {
+  font-size: 94px;
+}
+.sleek-line1 {
+  width: 60%; /* Adjust width as needed */
+  height: 4px; /* Adjust thickness of the line */
+  background-color: #000; /* Default color */
+  margin: 10px auto; /* Center the line horizontally and add margin at the bottom */
+  margin-top: 60px;
+  box-sizing: border-box; /* Ensures padding and border are included in the total height and width */
+}
+#style1 {
   font-weight: bold;
 }
